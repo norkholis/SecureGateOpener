@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "426975901462",
+    "firebase_url": "https://gateopener-1525946916357.firebaseio.com",
+    "project_id": "securegateopener-1525946916357",
+    "storage_bucket": "securegateopener-1525946916357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426975901462:android:4bcc9d8ec112b5a8",
+        "android_client_info": {
+          "package_name": "com.example.norkholis.securegateopener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426975901462-87f3vrjbfgga4s5crsuvhrqafkjiv53r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.norkholis.securegateopener",
+            "certificate_hash": "913fb703499c2fdb2fc365b753cab92bbff18282"
+          }
+        },
+        {
+          "client_id": "426975901462-1jom5o0ic4e079s0u4u06uohspgrl388.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY9m0BP76D2qldu8nBwFVs1NlFw3cLszU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426975901462-1jom5o0ic4e079s0u4u06uohspgrl388.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

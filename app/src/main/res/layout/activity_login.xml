@@ -13,71 +13,80 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:src="@drawable/barrier_icon"/>
+        android:src="@drawable/barrier_icon" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp">
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="8dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
+                    android:id="@+id/lgn_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="Username"
-                    android:id="@+id/lgn_username"/>
+                    android:inputType="text" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
+                    android:id="@+id/lgn_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
-                    android:inputType="textPassword"
-                    android:id="@+id/lgn_password"/>
+                    android:inputType="textPassword" />
             </android.support.design.widget.TextInputLayout>
+
             <Button
+                android:id="@+id/btn_login"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Login"
-                android:id="@+id/btn_login"
-                android:background="@drawable/primary_rounded"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"/>
+                android:background="@drawable/primary_rounded"
+                android:text="Login" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
     <View
         android:layout_width="120dp"
-        android:layout_gravity="center"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Jika belum terdaftar silahkan "/>
+        android:text="Jika belum terdaftar silahkan " />
+
     <Button
+        android:id="@+id/btn_toRegister"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Register"
-        android:id="@+id/btn_toRegister"
-        android:background="@drawable/primary_rounded"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:background="@drawable/primary_rounded"
+        android:text="Register" />
 
 </LinearLayout>
