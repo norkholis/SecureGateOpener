@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -41,6 +43,11 @@ public class DashboardActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        MapFragment mapFragment = new MapFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, mapFragment);
+        transaction.commit();
     }
 
     @Override
@@ -92,6 +99,10 @@ public class DashboardActivity extends AppCompatActivity
             Intent i = new Intent(DashboardActivity.this, LoginActivity.class);
             startActivity(i);
             finish();
+        }
+        if(fragment != null ){
+            FragmentManager fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fragment_container, fragment, fragment.getClass().getSimpleName()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
